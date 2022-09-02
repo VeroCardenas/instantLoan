@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+$primary: #748DA6;
+$secondary: #9CB4CC;
+$tertiary: #D3CEDF;
+$quaternary: #F2D7D9;
+
+
+
+.main {
+  background: $primary;
+
+  &__child {
+    background: $secondary
+  }
+}
