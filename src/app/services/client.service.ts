@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { map, Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Client } from '../models/client';
 
@@ -17,8 +18,13 @@ export class ClientService {
     this._http.get(this.URL).pipe(res => res);
   }
 
-  saveClient(client: Client) {
-    this._http.post(this.URL, client).pipe(res => res);
+  saveClient(client: Client): Observable<Client> {
+    return this._http.post(this.URL, client)
+      .pipe(
+        map((res: any) => {
+          return res;
+        }
+        ))
   }
 
   editClients(client: Client) {

@@ -4,7 +4,7 @@ import { ClientComponent } from './views/client/client.component';
 
 const routes: Routes = [
   {
-    path: 'client',
+    path: '',
     component: ClientComponent,
   },
 

@@ -5,5 +5,13 @@ export class Client {
   identification: string = '';
   email: string = '';
   address: string = '';
-  birthday: Date = new Date();
+  birthday: string = '';
+  phoneNumber: string = '';
+  profileImage: string = '';
+
+  get name() {
+    return this.firstName + ' ' + this.lastName
+  }
 }
+
+

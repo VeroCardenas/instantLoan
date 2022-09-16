@@ -1,0 +1,8 @@
+<div [formGroup]="form" class="input">
+  <label class="input__label">{{label}}</label>
+  <input class="input__field" [id]="id" [type]="type" [formControlName]="controlName" placeholder="{{ placeholder }}"
+    (keyup)="onKeyUp($event)" />
+  <label class="input__errors" [id]="id" *ngIf="form.controls[controlName].errors?.['required']">
+    Campo requerido
+  </label>
+</div>

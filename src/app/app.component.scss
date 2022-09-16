@@ -1,0 +1,9 @@
+::ng-deep body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1rem;
+  padding: 50px;
+  background-color: var(--background);
+}
