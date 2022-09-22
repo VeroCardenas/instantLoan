@@ -1,6 +1,14 @@
 <app-card>
-  <app-profile-image></app-profile-image>
-  <label>{{client.name}}</label>
-  <label>{{client.email}}</label>
-  <label>{{client.phoneNumber}}</label>
+  <div class="client">
+    <div class="client__buttons">
+      <app-button [label]="'Eliminar'" [icon]="iconDelete" class="danger"> </app-button>
+      <app-button [label]="'Editar'" [icon]="iconEdit"> </app-button>
+
+    </div>
+    <app-profile-image></app-profile-image>
+
+    <label>{{client.firstName + ' '+ client.lastName}}</label>
+    <label>{{client.email}}</label>
+    <label>{{client.phoneNumber}}</label>
+  </div>
 </app-card>

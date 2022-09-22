@@ -10,6 +10,7 @@ export class ButtonComponent implements OnInit {
 
   @Input() label = '';
   @Input() icon: any | undefined;
+  @Input() class = '';
 
   constructor() { }
 

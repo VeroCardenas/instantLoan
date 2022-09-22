@@ -8,3 +8,20 @@
   background-color: var(--background);
 }
 
+.main-content{
+  padding-left: 40px;;
+}
+
+@media (min-width: 768px) {
+  .main-content{
+    padding-left: 205px;;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .main-content{
+    padding-left: 205px;;
+  }
+}
+

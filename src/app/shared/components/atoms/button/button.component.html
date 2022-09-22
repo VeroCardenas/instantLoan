@@ -1,8 +1,7 @@
-<button type="button" class="button">
-  <ng-container *ngIf="icon">
-    <fa-icon [icon]="icon"></fa-icon>
-  </ng-container>
-  <ng-container *ngIf="label">
-    {{label}}
-  </ng-container>
+<button *ngIf="!icon" type="button" [class]="'button '+ class">
+  {{label}}
+</button>
+
+<button *ngIf=" icon" [class]=" 'button button-icon '+class">
+  <fa-icon [icon]="icon"></fa-icon>
 </button>
