@@ -1,0 +1,19 @@
+<div #toggleButton class="menu-button" id="toggle" (click)="openHideMenu()">
+  <fa-icon id="test" class="icon" [icon]="menuIcon" ></fa-icon>
+</div>
+<div #sidebar [ngClass]="{ 'sidebar-hide': hideSideBar, 'sidebar': true}" >
+  <div class="sidebar__profile">
+    <h3>Instant Loan</h3>
+    <app-profile-image src="assets/logo/logo.png"></app-profile-image>
+  </div>
+  <div class="sidebar__menu">
+    <ul>
+      <li>
+        <a href="#" class="active">
+          <fa-icon class="icon" [icon]="icon"></fa-icon>
+          <span class="item">Home</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

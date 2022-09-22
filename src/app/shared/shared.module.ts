@@ -8,6 +8,8 @@ import { ButtonComponent } from './components/atoms/button/button.component';
 import { ProfileImageComponent } from './components/atoms/profile-image/profile-image.component';
 import { CardClientComponent } from './components/molecules/card-client/card-client.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ClientComponent } from './components/organism/client/client.component';
+import { SideBarComponent } from './components/molecules/side-bar/side-bar.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ButtonComponent,
     ProfileImageComponent,
     CardClientComponent,
+    ClientComponent,
+    SideBarComponent,
   ],
   exports:[
     InputComponent,
@@ -23,6 +27,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ButtonComponent,
     ProfileImageComponent,
     CardClientComponent,
+    ClientComponent,
+    SideBarComponent,
   ],
   imports: [
     CommonModule,

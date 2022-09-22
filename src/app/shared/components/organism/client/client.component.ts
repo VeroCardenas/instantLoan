@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Client } from 'src/app/models/client';
-
+import { ClientService } from 'src/app/services/client.service';
 
 @Component({
   selector: 'app-client',
@@ -9,9 +9,13 @@ import { Client } from 'src/app/models/client';
   styleUrls: ['./client.component.scss']
 })
 export class ClientComponent implements OnInit {
+
   public client = new Client();
   public form: FormGroup = new FormGroup({});
-  constructor() { }
+
+  constructor(
+    private clientService: ClientService,
+  ) { }
 
   ngOnInit(): void {
     this.initForm()
@@ -24,14 +28,13 @@ export class ClientComponent implements OnInit {
       address: new FormControl(this.client.address, [Validators.required]),
       birthday: new FormControl(this.client.birthday, [Validators.required]),
       email: new FormControl(this.client.email, [Validators.required]),
-      identification: new FormControl(this.client.identification, [Validators.required]),
       phoneNumber: new FormControl(this.client.identification, [Validators.required]),
       profileImage: new FormControl(this.client.identification, [Validators.required]),
     });
   }
 
   save(){
-    console.log('save', this.form.value)
+    this.clientService.saveClient(this.form.value).subscribe( res=> console.log(res))
   }
 
 }

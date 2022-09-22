@@ -14,8 +14,8 @@ export class ClientService {
     private _http: HttpClient
   ) { }
 
-  getClients() {
-    this._http.get(this.URL).pipe(res => res);
+  getClients(): Observable<Client[]> {
+    return this._http.get(this.URL).pipe(map(res => res as Client[]));
   }
 
   saveClient(client: Client): Observable<Client> {

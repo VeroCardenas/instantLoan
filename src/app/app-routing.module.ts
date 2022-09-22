@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ClientComponent } from './views/client/client.component';
+import { ClientsComponent } from './views/client/clients.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ClientComponent,
+    component: ClientsComponent,
+  },
+
+  {
+    path: 'clients',
+    component: ClientsComponent,
   },
 
 ];
