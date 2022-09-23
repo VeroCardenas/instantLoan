@@ -1,0 +1,26 @@
+.clients {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--font-secondary);
+
+
+  &__title {
+    justify-self: flex-start;
+  }
+
+  &__button {
+    justify-self: flex-end;
+  }
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

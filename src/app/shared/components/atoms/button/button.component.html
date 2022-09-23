@@ -1,0 +1,7 @@
+<button *ngIf="!icon" type="button" [class]="'button '+ class">
+  {{label}}
+</button>
+
+<button *ngIf=" icon" [class]=" 'button button-icon '+class">
+  <fa-icon [icon]="icon"></fa-icon>
+</button>

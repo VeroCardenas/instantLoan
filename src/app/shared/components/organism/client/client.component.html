@@ -1,0 +1,19 @@
+<app-card>
+  <div class="client">
+    <label class="client__title">Crear cliente</label>
+    <div class="client__form">
+      <app-input [form]="form" [controlName]="'firstName'" [id]="'firstName'" label="Primer nombre"></app-input>
+      <app-input [form]="form" [controlName]="'lastName'" [id]="'lastName'" label="Apellido"></app-input>
+      <app-input [form]="form" [controlName]="'address'" [id]="'address'" label="Dirección"></app-input>
+      <app-input [form]="form" [controlName]="'birthday'" [id]="'birthday'" label="Fecha de Nacimiento" type="date">
+      </app-input>
+      <app-input [form]="form" [controlName]="'email'" [id]="'email'" label="Correo electrónico" type="email">
+      </app-input>
+      <app-input [form]="form" [controlName]="'phoneNumber'" [id]="'email'" label="Número de teléfono"></app-input>
+      <app-input [form]="form" [controlName]="'profileImage'" [id]="'profileImage'" label="Url de foto"></app-input>
+    </div>
+    <div class="client__buttons">
+      <app-button [label]="'Guardar'" (click)="save()"></app-button>
+    </div>
+  </div>
+</app-card>
