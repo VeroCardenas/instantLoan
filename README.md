@@ -1,27 +1,17 @@
 # InstantLoan
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+This project is for manage clients for loans. In the first release you can create clients. This project is responsive.
 
-## Development server
+Detail of technology:
+- Backend: .NET
+- Frontend: Anfular
+- Database SQLServer
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Images of aplication
+- Dashboad of clients desktop version
 
-## Code scaffolding
+![image](https://user-images.githubusercontent.com/89476036/191880056-7f269b35-41e9-4423-89d2-d0b61d2ec28b.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Dashboard of clients mobile version
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://user-images.githubusercontent.com/89476036/191880175-35c9ee84-2d0d-4687-8c1c-24d390408a2d.png)
